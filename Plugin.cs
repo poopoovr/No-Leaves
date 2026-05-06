@@ -11,7 +11,7 @@ namespace NoLeaves
         // Logs for bepinex
         internal static new ManualLogSource Logger;
         // unity temp file name for leaves
-        private const string leafName = "UnityTempFile-7114fb98b8aafae48ab42ee05d8b77fb (combined by EdMeshCombiner)";
+        private const string leafName = "UnityTempFile-974861d3659c78d4297f984b2f46d076 (combined by EdMeshCombiner)";
         // Checks if leaves were already removed
         private bool done = false;
 
