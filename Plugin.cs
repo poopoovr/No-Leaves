@@ -41,9 +41,18 @@ namespace NoLeaves
         {
             if(done) return;
             
-            GameObject obj = GameObject.Find(leafName);
-            if(obj != null) {
-                obj.SetActive(false);
+            // find all objects with this name
+            GameObject[] allObjs = GameObject.FindObjectsOfType<GameObject>();
+            int count = 0;
+            
+            foreach(GameObject obj in allObjs) {
+                if(obj.name == leafName) {
+                    obj.SetActive(false);
+                    count++;
+                }
+            }
+            
+            if(count > 0) {
                 Logger.LogInfo("Mod is working");
                 done = true;
             } else {
